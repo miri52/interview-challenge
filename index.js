@@ -30,14 +30,12 @@ function convertUnits(input, param1, param2) {
   for (const property in unitsToCm) {
     if (param1 === property) {
       multiplierToCm = unitsToCm[property];
-      console.log(multiplierToCm);
     }
   }
 
   for (const property in unitsFromCm) {
     if (param2 === property) {
       multiplierFromCm = unitsFromCm[property];
-      console.log(multiplierFromCm);
     }
   }
 
@@ -52,7 +50,6 @@ function convertUnits(input, param1, param2) {
 
 function handleSubmit(e) {
   e.preventDefault();
-  console.log(inputNumber.value, firstUnitEl.value, secondUnitEl.value);
   convertUnits(
     inputNumber.value,
     firstUnitEl.value.toLowerCase(),
