@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Conversion Tool</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="intro">
+        Am I fit enough to walk that far? Or should I take a cab? <br />
+        Will this desk fit well into my new office or will it become the
+        elephant in the room?
+      </div>
+      <h3 class="intro-action">
+        Use this converter to turn those mysterious units into something that
+        makes sense
+      </h3>
+
+      <form class="conversion-form" id="conversion-form">
+        <label for="number">From</label>
+        <input
+          class="number-input"
+          type="number"
+          id="number"
+          name="number"
+          required
+        />
+        <label for="unit1"></label>
+        <select id="unit1" name="unit1">
+          <option value="centimeter">Centimeter</option>
+          <option value="meter">Meter</option>
+          <option value="kilometer">Kilometer</option>
+          <option value="Mile">Mile</option>
+          <option value="Yard">Yard</option>
+          <option value="Foot">Foot</option>
+          <option value="Inch">Inch</option>
+        </select>
+        <label for="unit2">to</label>
+        <select id="unit2" name="unit2">
+          <option value="centimeter">Centimeter</option>
+          <option value="meter">Meter</option>
+          <option value="kilometer">Kilometer</option>
+          <option value="Mile">Mile</option>
+          <option value="Yard">Yard</option>
+          <option value="Foot">Foot</option>
+          <option value="Inch">Inch</option>
+        </select>
+        <input type="submit" value="Convert" class="submit-btn" />
+      </form>
+      <div class="result-container" id="result-container"></div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
